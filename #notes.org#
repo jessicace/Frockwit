@@ -1,0 +1,10 @@
+* Database Implications
+- It was initially envisaged that there would be two distinct
+  entities, the *Brand* and the *Influencer*, and they would have very
+  different goals. Through surveying brands and influencers, they are
+  more homogenous and their goals are not so divided. Thus, at this
+  stage, the User model was created, rather than a Brand model and an
+  Influencer model.
+- Polymorphism will be useful for the social media accounts - however,
+  time is of the essence in a hackathon, so at the moment they are not
+  connected.

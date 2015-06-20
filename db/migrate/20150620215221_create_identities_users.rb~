@@ -1,0 +1,6 @@
+class CreateIdentitiesUsers < ActiveRecord::Migration
+  def change
+    create_table :identities_users do |t|
+    end
+  end
+end
