@@ -1,0 +1,6 @@
+class CreateUsersWantedConnections < ActiveRecord::Migration
+  def change
+    create_table :users_wanted_connections do |t|
+    end
+  end
+end

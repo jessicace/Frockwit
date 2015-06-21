@@ -1,0 +1,38 @@
+<tr>
+	<td rowspan=6><img src="http://emojipedia.org/wp-content/uploads/2014/04/1f408-google-android.png"></td>
+</tr>
+<tr>
+	<td colspan=2>
+		<h4><%= user.contact_name %><small><em><%= user.identities.map { |identity| identity.name }.join(", ") %></em></small></h4>
+	</td>
+</tr>
+<tr>
+	<td>
+		<label>Goals</label>
+	</td>
+	<td><%= user.goals %></td>
+</tr>
+<tr>
+	<td>
+		<label>Looking for</label>
+	</td>
+	<td><%= user.requirements %></td>
+</tr>
+<tr>
+	<td>
+		<label>Connecting with</label>
+	</td>
+	<td>
+		<em><%= user.wanted_connections.map { |connection| connection.name }.join("s, ") + 's' %></em>
+	</td>
+</tr>
+
+<tr>
+	<td colspan=2>
+		<span class="glyphicon glyphicon-envelope"></span>
+		<span class="glyphicon glyphicon-heart"></span>
+		<span class="glyphicon glyphicon-comment"></span>
+		<span class="glyphicon glyphicon-calendar"></span>
+		<span class="glyphicon glyphicon-earphone"></span>
+	</td>
+</tr>

@@ -1,0 +1,9 @@
+class CreateFacebookAccounts < ActiveRecord::Migration
+  def change
+    create_table :facebook_accounts do |t|
+      t.text :account_name
+      t.integer :subscribers
+      t.timestamps null: false
+    end
+  end
+end

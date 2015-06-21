@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-md-12 filter">
+		<ul class="nav nav-pills text-center">
+			<li><%= link_to "Everyone", users_path %></li>
+			<li><%= link_to "Influencers", users_path(identity: 'Influencer') %></li>
+			<li><%= link_to "Fashion Labels", users_path(identity: 'Fashion Label') %></li>
+			<li><%= link_to "Bloggers", users_path(identity: 'Blogger') %></li>
+			<li><%= link_to "Instagrammers", users_path(identity: 'Instagrammer') %></li>
+		</ul>
+	</div>
+</div>
+<table class="table table-hover">
+	<tbody>
+		<colgroup>
+			<col class="column1">
+			<col class="column2" span="2">
+		</colgroup>
+		<%= render @users %>
+	</tbody>
+</table>

@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="col-xs-4">
+		<%= link_to "Influencers", users_url, class: 'btn btn-default' %>
+		<%= link_to "Brands", users_url, class: 'btn btn-default' %>
+	</div>
+</div>
+<table class="table table-hover">
+	<tbody>
+		<%= render @users %>
+	</tbody>
+</table>
