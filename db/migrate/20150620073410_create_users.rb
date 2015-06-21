@@ -10,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :website               # Used for Potential Influencer or for Company Information
       t.text :goals                 # Initially, Used for Creating Meaningful Connections
       t.text :requirements          # Initially, Used for Creating Meaningful Connections
-      t.bool :connections_wanted    # True/False Value for whether Users Want to be Connected 
+      t.boolean :connect            # True/False Value for whether Users Want to be Connected 
       t.timestamps null: false
     end
   end
